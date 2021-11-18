@@ -1,4 +1,10 @@
-const { error } = require("console");
+const todos = [
+  {
+    task: "sleep",
+    isDel: false,
+    isCompleated: false,
+  },
+];
 
 const getAlltodos = (req, res) => {
   const found = todos.filter((todo) => !todo.isDel);
